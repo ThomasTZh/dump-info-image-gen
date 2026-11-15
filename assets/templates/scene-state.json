@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "world_id": "replace-with-slug",
+  "slug": "replace-with-slug",
+  "updated": "2026-11-13",
+  "mode": "object",
+  "platform": "portable",
+  "visual_thesis": "One sentence describing what the viewer must immediately understand.",
+  "scale_anchors": [
+    {
+      "label": "human adult",
+      "size": "1.7 m",
+      "role": "comparison"
+    }
+  ],
+  "entities": [
+    {
+      "id": "e1",
+      "name": "Primary subject",
+      "role": "primary",
+      "origin": "stated",
+      "geometry": "Overall form, proportions, orientation, and component hierarchy.",
+      "dimensions": "~height x width x depth",
+      "materials": [
+        "base material"
+      ],
+      "colors": [
+        "dominant color"
+      ],
+      "finish": "surface finish, texture, wear",
+      "condition": "condition",
+      "placement": "position in the world and frame",
+      "pose": "orientation or action",
+      "features": [
+        {
+          "id": "f1",
+          "name": "distinctive feature",
+          "surface": "front",
+          "description": "what it looks like on the surface",
+          "origin": "stated"
+        }
+      ]
+    }
+  ],
+  "environment": {
+    "location": "where the scene takes place",
+    "time": "time of day",
+    "weather": "weather or atmosphere",
+    "atmosphere": "haze, dust, smoke, stillness",
+    "absent": [
+      "things that must not appear"
+    ]
+  },
+  "camera": {
+    "view_id": "front-three-quarter",
+    "height": "1.2 m above ground",
+    "distance": "2.5 m",
+    "azimuth_deg": 35,
+    "elevation_deg": 8,
+    "lens": "50mm",
+    "shot_scale": "full subject with context",
+    "framing": "subject centered, two-thirds of frame height",
+    "focus": "primary visible detail",
+    "depth_of_field": "f/2.8, shallow",
+    "aspect_ratio": "3:2"
+  },
+  "visibility": [
+    {
+      "entity_id": "e1",
+      "feature_id": "f1",
+      "surface": "front",
+      "state": "visible",
+      "cue": "direct",
+      "prompt_action": "describe",
+      "note": "why this state applies"
+    }
+  ],
+  "lighting": {
+    "key": "soft key light from frame upper left",
+    "fill": "cool ambient bounce",
+    "rim": "none",
+    "time_of_day": "late afternoon",
+    "color_temperature": "warm",
+    "shadows": "soft, falling behind the subject"
+  },
+  "color_finish": {
+    "palette": [
+      "dominant color",
+      "secondary color"
+    ],
+    "saturation": "muted",
+    "contrast": "medium",
+    "medium": "photoreal",
+    "grain": "fine film grain"
+  },
+  "style": "photoreal cinematic",
+  "constraints": {
+    "must_include": [],
+    "must_avoid": [],
+    "exact_text": []
+  },
+  "assumptions": [
+    {
+      "claim": "camera height and distance",
+      "reason": "not specified in the dump; chosen for a readable view"
+    }
+  ],
+  "conflicts": [],
+  "ignored": [
+    {
+      "info": "non-visual background detail",
+      "reason": "no visible consequence in this view"
+    }
+  ]
+}

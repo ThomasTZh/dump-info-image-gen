@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dump Info Image Gen"
+  short_description: "Reconstruct an object or scene from dumped information, then write an image prompt from the visible camera view."
+  default_prompt: "Use $dump-info-image-gen to reconstruct this dump, choose a camera, mark what is visible and hidden, and write an image prompt."
